@@ -36,8 +36,8 @@ def eulerTotient(n, primes):
             #remove prime from result(only once)
             res -= res/p
     #correction in case there is another prime factor just beyond sqrt(n):
-	if(reducable>1):
-		res -= res/reducable
+    if(reducable>1):
+        res -= res/reducable
         
     return res
         
