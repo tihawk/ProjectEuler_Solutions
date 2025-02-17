@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func (s Solution) P1() {
 	result := 0;
 	for i := 3; i < 1000; i++ {
 		if i % 3 == 0 || i % 5 == 0 {

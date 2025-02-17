@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func main() {
+func (s Solution) P4() {
 	largestPalindrome := 101;
 	candidate := 0;
 	candidateStr := "";

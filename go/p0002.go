@@ -18,7 +18,7 @@ func recurse(prev int, curr int) {
 	recurse(curr, prev + curr);
 }
 
-func main() {
+func (s Solution) P2() {
 	recurse(1, 2);
 } 
 

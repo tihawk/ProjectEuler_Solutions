@@ -10,7 +10,7 @@ var (
 // I think it comes from this fact:
 // All prime numbers, with the exception of 2 and 5, ends with 1, 3, 7, or 9.
 // This makes sense, because all numbers ending on 5 are divisible by 5.
-func main() {
+func (s Solution) P3() {
 	largestPrime := -1;
 
 	// Check for factors of 2
