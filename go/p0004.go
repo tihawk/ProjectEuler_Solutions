@@ -8,29 +8,29 @@ import (
 )
 
 func (s Solution) P4() {
-	largestPalindrome := 101;
-	candidate := 0;
-	candidateStr := "";
+	largestPalindrome := 101
+	candidate := 0
+	candidateStr := ""
 	for i := 100; i < 1000; i++ {
 		for j := 1000; j >= 100; j-- {
 			if i > j {
-				break;
+				break
 			}
-			candidate = i * j;	
+			candidate = i * j
 			if candidate <= largestPalindrome {
-				continue;
+				continue
 			}
-			candidateStr = strconv.Itoa(candidate);
-			temp := strings.Split(candidateStr, "");
-			slices.Reverse(temp);
-			reversed := strings.Join(temp, "");
+			candidateStr = strconv.Itoa(candidate)
+			temp := strings.Split(candidateStr, "")
+			slices.Reverse(temp)
+			reversed := strings.Join(temp, "")
 			if candidateStr == reversed {
-				largestPalindrome = candidate;
+				largestPalindrome = candidate
 			}
 		}
 	}
 
 	fmt.Println("Largest palindrome product of 3-digit numbers: ",
-	largestPalindrome);
+		largestPalindrome)
 
 }
